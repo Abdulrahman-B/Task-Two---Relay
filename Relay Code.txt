@@ -1,0 +1,15 @@
+void setup()
+{
+  pinMode(9, INPUT);
+  pinMode(1, OUTPUT);
+}
+
+void loop()
+{
+  if (digitalRead(9) == LOW) {
+    digitalWrite(1, LOW);
+  } else {
+    digitalWrite(1, HIGH);
+  }
+  
+}
